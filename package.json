@@ -1,16 +1,16 @@
 {
-  "name"       : "gulp-importjs",
-  "description": "Allow import rules in jsrc files",
-  "version"    : "0.1",
-  "homepage"   : "https://github.com/RonnieSan/gulp-importjs",
-  "repository" : "https://github.com/RonnieSan/gulp-importjs.git",
-  "author"     : "RonnieSan",
-  "main"       : "./index.js",
+  "name": "gulp-importjs",
+  "description": "Allow @import rules in jsrc files.  Files should be relative to the app root.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/RonnieSan/gulp-importjs",
+  "repository": "https://github.com/RonnieSan/gulp-importjs.git",
+  "author": "RonnieSan",
+  "main": "./index.js",
   "keywords": [
     "importjs"
   ],
   "dependencies": {
-    "through"  : "^2.3.4",
+    "through": "^2.3.4",
     "gulp-util": "^2.2.5"
   },
   "engineStrict": true,
