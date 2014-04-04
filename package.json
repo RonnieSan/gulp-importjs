@@ -1,0 +1,26 @@
+{
+  "name"       : "gulp-importjs",
+  "description": "Allow import rules in jsrc files",
+  "version"    : "0.1",
+  "homepage"   : "https://github.com/RonnieSan/gulp-importjs",
+  "repository" : "https://github.com/RonnieSan/gulp-importjs.git",
+  "author"     : "RonnieSan",
+  "main"       : "./index.js",
+  "keywords": [
+    "importjs"
+  ],
+  "dependencies": {
+    "through"  : "^2.3.4",
+    "gulp-util": "^2.2.5"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/RonnieSan/gulp-importjs/blob/master/LICENSE"
+    }
+  ]
+}
