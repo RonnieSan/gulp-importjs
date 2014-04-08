@@ -1,7 +1,7 @@
 {
   "name": "gulp-importjs",
   "description": "Allow @import rules in jsrc files.  Files should be relative to the app root.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/RonnieSan/gulp-importjs",
   "repository": "https://github.com/RonnieSan/gulp-importjs.git",
   "author": "RonnieSan",
