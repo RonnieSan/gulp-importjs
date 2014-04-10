@@ -38,30 +38,46 @@ function importJS() {
 	return stream;
 }
 
+var re = /^@import [\'\"](.+)[\'\"];$/mi;
+
 function replaceImports(content) {
-	var matches = content.match(/@import (\'|\")\S*(\'|\");/g);
 
-	if (matches !== null) {
-		var limit = matches.length;
-		for (var n = 0; n < limit; n++) {
-			match    = matches[n];
-			fileName = appRoot + match.replace(/@import|[\'\"\s\;\n']/gi, ""); // Extract the filepath
+	while ((match = re.exec(content)) !== null) {
 
-			if (fs.existsSync(fileName)) {
+		var fileName = appRoot + match[1];
+		var match    = match[0].toString();
 
-				// If the file was already imported somewhere, don't import it again
-				if (imports.indexOf(fileName) === -1) {
-					imports.push(fileName);
-					importContents = fs.readFileSync(fileName);
-					content = content.replace(match, "\n" + importContents + "\n");
-					content = replaceImports(content);
-				} else {
-					content = content.replace(match, "// Already included: " + fileName + "\n");
-				}
-			} else {
-				content = content.replace(match, "// Error importing: " + fileName + "\n");
+		// Check if the file we're trying to import exists
+		if (fs.existsSync(fileName)) {
+
+			// Check if the file was already imported somewhere
+			if (imports.indexOf(fileName) === -1) {
+
+				// Add the file to the imports list
+				imports.push(fileName);
+
+				// Read the imported file
+				importContents = fs.readFileSync(fileName, 'utf8');
+
+				// Recursively import files
+				importContents = replaceImports(importContents);
+
+				// Place the imported content into the file
+				content = content.replace(re, importContents + "\n", "mi");
 			}
+
+			// The file was already imported, comment out the line
+			else {
+				content = content.replace(re, "// Already included: " + fileName + "\n");
+			}
+
 		}
+
+		// The file does not exist, print out the error
+		else {
+			content = content.replace(re, "// Import file does not exist: " + fileName + "\n");
+		}
+
 	}
 
 	return content;
