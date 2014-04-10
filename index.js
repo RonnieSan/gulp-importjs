@@ -57,7 +57,8 @@ function replaceImports(content) {
 				imports.push(fileName);
 
 				// Read the imported file
-				importContents = fs.readFileSync(fileName, 'utf8');
+				// *** Replace dollar signs so submatches don't get replaced
+				importContents = fs.readFileSync(fileName, 'utf8').replace(/\$/g, '$$$$');
 
 				// Recursively import files
 				importContents = replaceImports(importContents);
