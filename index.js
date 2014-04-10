@@ -15,7 +15,6 @@ function importStream(content) {
 
 function importJS() {
 
-	// Reset the imports array
 	imports = [];
 
 	var stream = through.obj(function(file, enc, callback) {
@@ -40,7 +39,7 @@ function importJS() {
 }
 
 function replaceImports(content) {
-	var matches = content.match(/@import.+;?/gi);
+	var matches = content.match(/@import (\'|\")\S*(\'|\");/g);
 
 	if (matches !== null) {
 		var limit = matches.length;
@@ -48,21 +47,19 @@ function replaceImports(content) {
 			match    = matches[n];
 			fileName = appRoot + match.replace(/@import|[\'\"\s\;\n']/gi, ""); // Extract the filepath
 
-			console.log(fileName);
-
 			if (fs.existsSync(fileName)) {
 
 				// If the file was already imported somewhere, don't import it again
 				if (imports.indexOf(fileName) === -1) {
 					imports.push(fileName);
 					importContents = fs.readFileSync(fileName);
-					content = content.replace(match, importContents + "\n");
+					content = content.replace(match, "\n" + importContents + "\n");
 					content = replaceImports(content);
 				} else {
-					content = content.replace(match, "// Already included: " + match + "\n");
+					content = content.replace(match, "// Already included: " + fileName + "\n");
 				}
 			} else {
-				content = content.replace(match, "// Error importing: " + match + "\n");
+				content = content.replace(match, "// Error importing: " + fileName + "\n");
 			}
 		}
 	}
