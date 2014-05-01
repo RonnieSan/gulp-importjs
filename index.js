@@ -15,9 +15,10 @@ function importStream(content) {
 
 function importJS() {
 
-	imports = [];
-
 	var stream = through.obj(function(file, enc, callback) {
+
+		// Reset the imports object
+		imports = [];
 
 		if (file.isNull()) {
 			// Do nothing
