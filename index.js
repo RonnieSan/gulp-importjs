@@ -13,7 +13,12 @@ function importStream(content) {
 	return stream;
 }
 
-function importJS() {
+function importJS(appDir) {
+
+	// Allow passing of a new app root
+	if(typeof appDir === 'string'){
+		appRoot = appDir;
+	}
 
 	var stream = through.obj(function(file, enc, callback) {
 
