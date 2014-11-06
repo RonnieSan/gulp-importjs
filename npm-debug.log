@@ -1,135 +1,138 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish', './' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
 2 info using npm@1.3.21
-3 info using node@v0.10.24
-4 verbose publish [ './' ]
-5 verbose cache add [ './', null ]
-6 verbose cache add name=undefined spec="./" args=["./",null]
-7 verbose parsed url { protocol: null,
-7 verbose parsed url   slashes: null,
-7 verbose parsed url   auth: null,
-7 verbose parsed url   host: null,
-7 verbose parsed url   port: null,
-7 verbose parsed url   hostname: null,
-7 verbose parsed url   hash: null,
-7 verbose parsed url   search: null,
-7 verbose parsed url   query: null,
-7 verbose parsed url   pathname: './',
-7 verbose parsed url   path: './',
-7 verbose parsed url   href: './' }
-8 silly lockFile 0ee6c175- ./
-9 verbose lock ./ /Users/Ronnie/.npm/0ee6c175-.lock
-10 verbose tar pack [ '/var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/tmp.tgz',
-10 verbose tar pack   './' ]
-11 verbose tarball /var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/tmp.tgz
-12 verbose folder ./
-13 info prepublish gulp-importjs@0.1.0
-14 silly lockFile 04cb2bca-tar tar://./
-15 verbose lock tar://./ /Users/Ronnie/.npm/04cb2bca-tar.lock
-16 silly lockFile 7fff95fc-3319-0-47409026231616735-tmp-tgz tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/tmp.tgz
-17 verbose lock tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/tmp.tgz /Users/Ronnie/.npm/7fff95fc-3319-0-47409026231616735-tmp-tgz.lock
-18 silly lockFile 04cb2bca-tar tar://./
-19 silly lockFile 04cb2bca-tar tar://./
-20 silly lockFile 7fff95fc-3319-0-47409026231616735-tmp-tgz tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/tmp.tgz
-21 silly lockFile 7fff95fc-3319-0-47409026231616735-tmp-tgz tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/tmp.tgz
-22 verbose tar unpack /var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/tmp.tgz
-23 silly lockFile 6ffa27d9-3319-0-47409026231616735-package tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/package
-24 verbose lock tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/package /Users/Ronnie/.npm/6ffa27d9-3319-0-47409026231616735-package.lock
-25 silly lockFile 7fff95fc-3319-0-47409026231616735-tmp-tgz tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/tmp.tgz
-26 verbose lock tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/tmp.tgz /Users/Ronnie/.npm/7fff95fc-3319-0-47409026231616735-tmp-tgz.lock
-27 silly gunzTarPerm modes [ '755', '644' ]
-28 silly gunzTarPerm extractEntry package.json
-29 silly gunzTarPerm extractEntry README.md
-30 silly gunzTarPerm extractEntry LICENSE
-31 silly gunzTarPerm extractEntry index.js
-32 silly lockFile 6ffa27d9-3319-0-47409026231616735-package tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/package
-33 silly lockFile 6ffa27d9-3319-0-47409026231616735-package tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/package
-34 silly lockFile 7fff95fc-3319-0-47409026231616735-tmp-tgz tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/tmp.tgz
-35 silly lockFile 7fff95fc-3319-0-47409026231616735-tmp-tgz tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/tmp.tgz
-36 verbose tar pack [ '/Users/Ronnie/.npm/gulp-importjs/0.1.0/package.tgz',
-36 verbose tar pack   '/var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/package' ]
-37 verbose tarball /Users/Ronnie/.npm/gulp-importjs/0.1.0/package.tgz
-38 verbose folder /var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/package
-39 silly lockFile 6ffa27d9-3319-0-47409026231616735-package tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/package
-40 verbose lock tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/package /Users/Ronnie/.npm/6ffa27d9-3319-0-47409026231616735-package.lock
-41 silly lockFile 028daa40--gulp-importjs-0-1-0-package-tgz tar:///Users/Ronnie/.npm/gulp-importjs/0.1.0/package.tgz
-42 verbose lock tar:///Users/Ronnie/.npm/gulp-importjs/0.1.0/package.tgz /Users/Ronnie/.npm/028daa40--gulp-importjs-0-1-0-package-tgz.lock
-43 silly lockFile 6ffa27d9-3319-0-47409026231616735-package tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/package
-44 silly lockFile 6ffa27d9-3319-0-47409026231616735-package tar:///var/folders/yh/bhg8xvfs3bz6zh6t4mqw8n8m0000gn/T/npm-14034-8tBlTC3r/1396628973319-0.47409026231616735/package
-45 silly lockFile 028daa40--gulp-importjs-0-1-0-package-tgz tar:///Users/Ronnie/.npm/gulp-importjs/0.1.0/package.tgz
-46 silly lockFile 028daa40--gulp-importjs-0-1-0-package-tgz tar:///Users/Ronnie/.npm/gulp-importjs/0.1.0/package.tgz
-47 silly lockFile c9b7a2d5--npm-gulp-importjs-0-1-0-package /Users/Ronnie/.npm/gulp-importjs/0.1.0/package
-48 verbose lock /Users/Ronnie/.npm/gulp-importjs/0.1.0/package /Users/Ronnie/.npm/c9b7a2d5--npm-gulp-importjs-0-1-0-package.lock
-49 silly lockFile c9b7a2d5--npm-gulp-importjs-0-1-0-package /Users/Ronnie/.npm/gulp-importjs/0.1.0/package
-50 silly lockFile c9b7a2d5--npm-gulp-importjs-0-1-0-package /Users/Ronnie/.npm/gulp-importjs/0.1.0/package
-51 verbose tar unpack /Users/Ronnie/.npm/gulp-importjs/0.1.0/package.tgz
-52 silly lockFile 4678adc5--npm-gulp-importjs-0-1-0-package tar:///Users/Ronnie/.npm/gulp-importjs/0.1.0/package
-53 verbose lock tar:///Users/Ronnie/.npm/gulp-importjs/0.1.0/package /Users/Ronnie/.npm/4678adc5--npm-gulp-importjs-0-1-0-package.lock
-54 silly lockFile 028daa40--gulp-importjs-0-1-0-package-tgz tar:///Users/Ronnie/.npm/gulp-importjs/0.1.0/package.tgz
-55 verbose lock tar:///Users/Ronnie/.npm/gulp-importjs/0.1.0/package.tgz /Users/Ronnie/.npm/028daa40--gulp-importjs-0-1-0-package-tgz.lock
-56 silly gunzTarPerm modes [ '755', '644' ]
-57 silly gunzTarPerm extractEntry package.json
-58 silly gunzTarPerm extractEntry README.md
-59 silly gunzTarPerm extractEntry LICENSE
-60 silly gunzTarPerm extractEntry index.js
-61 silly lockFile 4678adc5--npm-gulp-importjs-0-1-0-package tar:///Users/Ronnie/.npm/gulp-importjs/0.1.0/package
-62 silly lockFile 4678adc5--npm-gulp-importjs-0-1-0-package tar:///Users/Ronnie/.npm/gulp-importjs/0.1.0/package
-63 silly lockFile 028daa40--gulp-importjs-0-1-0-package-tgz tar:///Users/Ronnie/.npm/gulp-importjs/0.1.0/package.tgz
-64 silly lockFile 028daa40--gulp-importjs-0-1-0-package-tgz tar:///Users/Ronnie/.npm/gulp-importjs/0.1.0/package.tgz
-65 verbose chmod /Users/Ronnie/.npm/gulp-importjs/0.1.0/package.tgz 644
-66 verbose chown /Users/Ronnie/.npm/gulp-importjs/0.1.0/package.tgz [ 501, 20 ]
-67 silly lockFile 0ee6c175- ./
-68 silly lockFile 0ee6c175- ./
-69 silly publish { name: 'gulp-importjs',
-69 silly publish   description: 'Allow @import rules in jsrc files.  Files should be relative to the app root.',
-69 silly publish   version: '0.1.0',
-69 silly publish   homepage: 'https://github.com/RonnieSan/gulp-importjs',
-69 silly publish   repository:
-69 silly publish    { type: 'git',
-69 silly publish      url: 'https://github.com/RonnieSan/gulp-importjs.git' },
-69 silly publish   author: { name: 'RonnieSan' },
-69 silly publish   main: './index.js',
-69 silly publish   keywords: [ 'importjs' ],
-69 silly publish   dependencies: { through: '^2.3.4', 'gulp-util': '^2.2.5' },
-69 silly publish   engineStrict: true,
-69 silly publish   engines: { node: '>= 0.10' },
-69 silly publish   licenses:
-69 silly publish    [ { type: 'MIT',
-69 silly publish        url: 'https://github.com/RonnieSan/gulp-importjs/blob/master/LICENSE' } ],
-69 silly publish   readme: 'gulp-importjs\n=============\n\nGulp plugin for allowing imports in JS files.\n\n##Usage\nCreate a new js file with a .jsrc extension.\n```javascript\n@import "/path/to/file.js";\n```\n\nIn your gulpfile.js...\n```javascript\nvar gulp     = require(\'gulp\');\nvar importjs = require(\'gulp-importjs\');\nvar rename   = require(\'gulp-rename\');\n\ngulp.task(\'importjs\', function() {\n  return gulp.src([\'folder/to/run/importjs/on\'])\n    .pipe(importjs())\n    .pipe(rename({extname: \'.js\'}))\n    .pipe(gulp.dest(\'folder/to/save/to\'));\n});\n\ngulp.task(\'default\', [\'importjs\']);\n```\n',
-69 silly publish   readmeFilename: 'README.md',
-69 silly publish   bugs: { url: 'https://github.com/RonnieSan/gulp-importjs/issues' },
-69 silly publish   _id: 'gulp-importjs@0.1.0',
-69 silly publish   dist: { shasum: 'd86d0493eef1e89e0e92a343b152fb3b5a7aafbe' },
-69 silly publish   _from: './' }
-70 verbose url raw gulp-importjs
-71 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-importjs' ]
-72 verbose url resolved https://registry.npmjs.org/gulp-importjs
-73 info trying registry request attempt 1 at 09:29:33
-74 http PUT https://registry.npmjs.org/gulp-importjs
-75 http 403 https://registry.npmjs.org/gulp-importjs
-76 info trying registry request attempt 1 at 09:29:35
+3 info using node@v0.10.11
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/Ronnie/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/tmp.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball /Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/tmp.tgz
+13 verbose folder .
+14 info prepublish gulp-importjs@0.1.6
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /Users/Ronnie/.npm/1f1177db-tar.lock
+17 silly lockFile 3278911c-9310-0-06566273677162826-tmp-tgz tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/tmp.tgz
+18 verbose lock tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/tmp.tgz /Users/Ronnie/.npm/3278911c-9310-0-06566273677162826-tmp-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 3278911c-9310-0-06566273677162826-tmp-tgz tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/tmp.tgz
+22 silly lockFile 3278911c-9310-0-06566273677162826-tmp-tgz tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/tmp.tgz
+23 verbose tar unpack /Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/tmp.tgz
+24 silly lockFile 32ef9558-9310-0-06566273677162826-package tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/package
+25 verbose lock tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/package /Users/Ronnie/.npm/32ef9558-9310-0-06566273677162826-package.lock
+26 silly lockFile 3278911c-9310-0-06566273677162826-tmp-tgz tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/tmp.tgz
+27 verbose lock tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/tmp.tgz /Users/Ronnie/.npm/3278911c-9310-0-06566273677162826-tmp-tgz.lock
+28 silly gunzTarPerm modes [ '755', '644' ]
+29 silly gunzTarPerm extractEntry package.json
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry LICENSE
+32 silly gunzTarPerm extractEntry index.js
+33 silly gunzTarPerm extractEntry package.json.orig
+34 silly lockFile 32ef9558-9310-0-06566273677162826-package tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/package
+35 silly lockFile 32ef9558-9310-0-06566273677162826-package tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/package
+36 silly lockFile 3278911c-9310-0-06566273677162826-tmp-tgz tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/tmp.tgz
+37 silly lockFile 3278911c-9310-0-06566273677162826-tmp-tgz tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/tmp.tgz
+38 verbose tar pack [ '/Users/Ronnie/.npm/gulp-importjs/0.1.6/package.tgz',
+38 verbose tar pack   '/Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/package' ]
+39 verbose tarball /Users/Ronnie/.npm/gulp-importjs/0.1.6/package.tgz
+40 verbose folder /Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/package
+41 silly lockFile 32ef9558-9310-0-06566273677162826-package tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/package
+42 verbose lock tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/package /Users/Ronnie/.npm/32ef9558-9310-0-06566273677162826-package.lock
+43 silly lockFile 721adee7--gulp-importjs-0-1-6-package-tgz tar:///Users/Ronnie/.npm/gulp-importjs/0.1.6/package.tgz
+44 verbose lock tar:///Users/Ronnie/.npm/gulp-importjs/0.1.6/package.tgz /Users/Ronnie/.npm/721adee7--gulp-importjs-0-1-6-package-tgz.lock
+45 silly lockFile 32ef9558-9310-0-06566273677162826-package tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/package
+46 silly lockFile 32ef9558-9310-0-06566273677162826-package tar:///Users/Ronnie/tmp/npm-76225-CShhaylv/1415295279310-0.06566273677162826/package
+47 silly lockFile 721adee7--gulp-importjs-0-1-6-package-tgz tar:///Users/Ronnie/.npm/gulp-importjs/0.1.6/package.tgz
+48 silly lockFile 721adee7--gulp-importjs-0-1-6-package-tgz tar:///Users/Ronnie/.npm/gulp-importjs/0.1.6/package.tgz
+49 silly lockFile 6a724ed1--npm-gulp-importjs-0-1-6-package /Users/Ronnie/.npm/gulp-importjs/0.1.6/package
+50 verbose lock /Users/Ronnie/.npm/gulp-importjs/0.1.6/package /Users/Ronnie/.npm/6a724ed1--npm-gulp-importjs-0-1-6-package.lock
+51 silly lockFile 6a724ed1--npm-gulp-importjs-0-1-6-package /Users/Ronnie/.npm/gulp-importjs/0.1.6/package
+52 silly lockFile 6a724ed1--npm-gulp-importjs-0-1-6-package /Users/Ronnie/.npm/gulp-importjs/0.1.6/package
+53 verbose tar unpack /Users/Ronnie/.npm/gulp-importjs/0.1.6/package.tgz
+54 silly lockFile db64fb7d--npm-gulp-importjs-0-1-6-package tar:///Users/Ronnie/.npm/gulp-importjs/0.1.6/package
+55 verbose lock tar:///Users/Ronnie/.npm/gulp-importjs/0.1.6/package /Users/Ronnie/.npm/db64fb7d--npm-gulp-importjs-0-1-6-package.lock
+56 silly lockFile 721adee7--gulp-importjs-0-1-6-package-tgz tar:///Users/Ronnie/.npm/gulp-importjs/0.1.6/package.tgz
+57 verbose lock tar:///Users/Ronnie/.npm/gulp-importjs/0.1.6/package.tgz /Users/Ronnie/.npm/721adee7--gulp-importjs-0-1-6-package-tgz.lock
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm extractEntry README.md
+61 silly gunzTarPerm extractEntry LICENSE
+62 silly gunzTarPerm extractEntry index.js
+63 silly gunzTarPerm extractEntry package.json.orig
+64 silly lockFile db64fb7d--npm-gulp-importjs-0-1-6-package tar:///Users/Ronnie/.npm/gulp-importjs/0.1.6/package
+65 silly lockFile db64fb7d--npm-gulp-importjs-0-1-6-package tar:///Users/Ronnie/.npm/gulp-importjs/0.1.6/package
+66 silly lockFile 721adee7--gulp-importjs-0-1-6-package-tgz tar:///Users/Ronnie/.npm/gulp-importjs/0.1.6/package.tgz
+67 silly lockFile 721adee7--gulp-importjs-0-1-6-package-tgz tar:///Users/Ronnie/.npm/gulp-importjs/0.1.6/package.tgz
+68 verbose chmod /Users/Ronnie/.npm/gulp-importjs/0.1.6/package.tgz 644
+69 verbose chown /Users/Ronnie/.npm/gulp-importjs/0.1.6/package.tgz [ 501, 20 ]
+70 silly lockFile 3a52ce78- .
+71 silly lockFile 3a52ce78- .
+72 silly publish { name: 'gulp-importjs',
+72 silly publish   description: 'Allow @import rules in jsrc files.  Files should be relative to the app root.',
+72 silly publish   version: '0.1.6',
+72 silly publish   homepage: 'https://github.com/RonnieSan/gulp-importjs',
+72 silly publish   repository:
+72 silly publish    { type: 'git',
+72 silly publish      url: 'https://github.com/RonnieSan/gulp-importjs.git' },
+72 silly publish   author: { name: 'RonnieSan' },
+72 silly publish   main: './index.js',
+72 silly publish   keywords: [ 'importjs' ],
+72 silly publish   dependencies: { through: '^2.3.4', 'gulp-util': '^2.2.5' },
+72 silly publish   engineStrict: true,
+72 silly publish   engines: { node: '>= 0.10' },
+72 silly publish   licenses:
+72 silly publish    [ { type: 'MIT',
+72 silly publish        url: 'https://github.com/RonnieSan/gulp-importjs/blob/master/LICENSE' } ],
+72 silly publish   readme: 'gulp-importjs\n=============\n\nGulp plugin for allowing imports in JS files using the @import syntax.  Each import MUST be on it\'s own line.  If a script has already been imported on the page, it will not import again.  Imports are recursive.\n\n##Usage\nCreate a new js file with a .jsrc extension.\n```javascript\n@import "/path/to/file.js";\n```\n\nIn your gulpfile.js...\n```javascript\nvar gulp     = require(\'gulp\');\nvar importjs = require(\'gulp-importjs\');\nvar rename   = require(\'gulp-rename\');\n\ngulp.task(\'importjs\', function() {\n  return gulp.src([\'folder/to/run/importjs/on\'])\n    .pipe(importjs())\n    .pipe(rename({extname: \'.js\'}))\n    .pipe(gulp.dest(\'folder/to/save/to\'));\n});\n\ngulp.task(\'default\', [\'importjs\']);\n```\n',
+72 silly publish   readmeFilename: 'README.md',
+72 silly publish   bugs: { url: 'https://github.com/RonnieSan/gulp-importjs/issues' },
+72 silly publish   _id: 'gulp-importjs@0.1.6',
+72 silly publish   dist: { shasum: '9526ea01444d9e696766513d5a6229e4f1b13607' },
+72 silly publish   _from: '.' }
+73 verbose url raw gulp-importjs
+74 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-importjs' ]
+75 verbose url resolved https://registry.npmjs.org/gulp-importjs
+76 info trying registry request attempt 1 at 09:34:39
 77 http PUT https://registry.npmjs.org/gulp-importjs
 78 http 403 https://registry.npmjs.org/gulp-importjs
-79 error publish Failed PUT 403
-80 error Error: forbidden cannot modify pre-existing version: 0.1.0
-80 error old={"name":"gulp-importjs","description":"Allow @import rules in jsrc files.  Files should be relative to the app root.","version":"0.1.0","homepage":"https://github.com/RonnieSan/gulp-importjs","repository":{"type":"git","url":"https://github.com/RonnieSan/gulp-importjs.git"},"author":{"name":"RonnieSan"},"main":"./index.js","keywords":["importjs"],"dependencies":{"through":"^2.3.4","gulp-util":"^2.2.5"},"engineStrict":true,"engines":{"node":">= 0.10"},"licenses":[{"type":"MIT","url":"https://github.com/RonnieSan/gulp-importjs/blob/master/LICENSE"}],"bugs":{"url":"https://github.com/RonnieSan/gulp-importjs/issues"},"_id":"gulp-importjs@0.1.0","dist":{"shasum":"0d368b6a68a3d588727b6e7b92b55ff83c2a2ee4","tarball":"http://registry.npmjs.org/gulp-importjs/-/gulp-importjs-0.1.0.tgz"},"_from":"gulp-importjs","_npmVersion":"1.3.21","_npmUser":{"name":"ronniesan","email":"ronniesan@ronniesan.com"},"maintainers":[{"name":"ronniesan","email":"ronniesan@ronniesan.com"}]}
-80 error new={"name":"gulp-importjs","description":"Allow @import rules in jsrc files.  Files should be relative to the app root.","version":"0.1.0","homepage":"https://github.com/RonnieSan/gulp-importjs","repository":{"type":"git","url":"https://github.com/RonnieSan/gulp-importjs.git"},"author":{"name":"RonnieSan"},"main":"./index.js","keywords":["importjs"],"dependencies":{"through":"^2.3.4","gulp-util":"^2.2.5"},"engineStrict":true,"engines":{"node":">= 0.10"},"licenses":[{"type":"MIT","url":"https://github.com/RonnieSan/gulp-importjs/blob/master/LICENSE"}],"readme":"gulp-importjs\u000a=============\u000a\u000aGulp plugin for allowing imports in JS files.\u000a\u000a##Usage\u000aCreate a new js file with a .jsrc extension.\u000a```javascript\u000a@import \"/path/to/file.js\";\u000a```\u000a\u000aIn your gulpfile.js...\u000a```javascript\u000avar gulp     = require('gulp');\u000avar importjs = require('gulp-importjs');\u000avar rename   = require('gulp-rename');\u000a\u000agulp.task('importjs', function() {\u000a  return gulp.src(['folder/to/run/importjs/on'])\u000a    .pipe(importjs())\u000a    .pipe(rename({extname: '.js'}))\u000a    .pipe(gulp.dest('folder/to/save/to'));\u000a});\u000a\u000agulp.task('default', ['importjs']);\u000a```\u000a","readmeFilename":"README.md","bugs":{"url":"https://github.com/RonnieSan/gulp-importjs/issues"},"_id":"gulp-importjs@0.1.0","dist":{"shasum":"d86d0493eef1e89e0e92a343b152fb3b5a7aafbe","tarball":"http://registry.npmjs.org/gulp-importjs/-/gulp-importjs-0.1.0.tgz"},"_from":"./","_npmVersion":"1.3.21","_npmUser":{"name":"ronniesan","email":"ronniesan@ronniesan.com"},"maintainers":[{"name":"ronniesan","email":"ronniesan@ronniesan.com"}]}: gulp-importjs
-80 error     at RegClient.<anonymous> (/usr/local/Cellar/node/0.10.11/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:275:14)
-80 error     at Request.self.callback (/usr/local/Cellar/node/0.10.11/lib/node_modules/npm/node_modules/request/request.js:123:22)
-80 error     at Request.EventEmitter.emit (events.js:98:17)
-80 error     at Request.<anonymous> (/usr/local/Cellar/node/0.10.11/lib/node_modules/npm/node_modules/request/request.js:893:14)
-80 error     at Request.EventEmitter.emit (events.js:117:20)
-80 error     at IncomingMessage.<anonymous> (/usr/local/Cellar/node/0.10.11/lib/node_modules/npm/node_modules/request/request.js:844:12)
-80 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
-80 error     at _stream_readable.js:920:16
-80 error     at process._tickCallback (node.js:415:13)
-81 error If you need help, you may report this *entire* log,
-81 error including the npm and node versions, at:
-81 error     <http://github.com/isaacs/npm/issues>
-82 error System Darwin 13.1.0
-83 error command "node" "/usr/local/bin/npm" "publish" "./"
-84 error cwd /Users/Ronnie/Development/Sites/gulp-importjs
-85 error node -v v0.10.24
-86 error npm -v 1.3.21
-87 verbose exit [ 1, true ]
+79 info trying registry request attempt 1 at 09:34:39
+80 http PUT https://registry.npmjs.org/gulp-importjs
+81 http 403 https://registry.npmjs.org/gulp-importjs
+82 error publish Failed PUT 403
+83 error Error: forbidden cannot modify pre-existing version: 0.1.6
+83 error old={"name":"gulp-importjs","description":"Allow @import rules in jsrc files.  Files should be relative to the app root.","version":"0.1.6","homepage":"https://github.com/RonnieSan/gulp-importjs","repository":{"type":"git","url":"https://github.com/RonnieSan/gulp-importjs.git"},"author":{"name":"RonnieSan"},"main":"./index.js","keywords":["importjs"],"dependencies":{"through":"^2.3.4","gulp-util":"^2.2.5"},"engineStrict":true,"engines":{"node":">= 0.10"},"licenses":[{"type":"MIT","url":"https://github.com/RonnieSan/gulp-importjs/blob/master/LICENSE"}],"bugs":{"url":"https://github.com/RonnieSan/gulp-importjs/issues"},"_id":"gulp-importjs@0.1.6","dist":{"shasum":"2a009ac33f0e14c57de48cb90ee60cf30ae71929","tarball":"http://registry.npmjs.org/gulp-importjs/-/gulp-importjs-0.1.6.tgz"},"_from":"./","_npmVersion":"1.3.21","_npmUser":{"name":"ronniesan","email":"ronniesan@ronniesan.com"},"maintainers":[{"name":"ronniesan","email":"ronniesan@ronniesan.com"}]}
+83 error new={"name":"gulp-importjs","description":"Allow @import rules in jsrc files.  Files should be relative to the app root.","version":"0.1.6","homepage":"https://github.com/RonnieSan/gulp-importjs","repository":{"type":"git","url":"https://github.com/RonnieSan/gulp-importjs.git"},"author":{"name":"RonnieSan"},"main":"./index.js","keywords":["importjs"],"dependencies":{"through":"^2.3.4","gulp-util":"^2.2.5"},"engineStrict":true,"engines":{"node":">= 0.10"},"licenses":[{"type":"MIT","url":"https://github.com/RonnieSan/gulp-importjs/blob/master/LICENSE"}],"readme":"gulp-importjs\u000a=============\u000a\u000aGulp plugin for allowing imports in JS files using the @import syntax.  Each import MUST be on it's own line.  If a script has already been imported on the page, it will not import again.  Imports are recursive.\u000a\u000a##Usage\u000aCreate a new js file with a .jsrc extension.\u000a```javascript\u000a@import \"/path/to/file.js\";\u000a```\u000a\u000aIn your gulpfile.js...\u000a```javascript\u000avar gulp     = require('gulp');\u000avar importjs = require('gulp-importjs');\u000avar rename   = require('gulp-rename');\u000a\u000agulp.task('importjs', function() {\u000a  return gulp.src(['folder/to/run/importjs/on'])\u000a    .pipe(importjs())\u000a    .pipe(rename({extname: '.js'}))\u000a    .pipe(gulp.dest('folder/to/save/to'));\u000a});\u000a\u000agulp.task('default', ['importjs']);\u000a```\u000a","readmeFilename":"README.md","bugs":{"url":"https://github.com/RonnieSan/gulp-importjs/issues"},"_id":"gulp-importjs@0.1.6","dist":{"shasum":"9526ea01444d9e696766513d5a6229e4f1b13607","tarball":"http://registry.npmjs.org/gulp-importjs/-/gulp-importjs-0.1.6.tgz"},"_from":".","_npmVersion":"1.3.21","_npmUser":{"name":"ronniesan","email":"ronniesan@ronniesan.com"},"maintainers":[{"name":"ronniesan","email":"ronniesan@ronniesan.com"}]}: gulp-importjs
+83 error     at RegClient.<anonymous> (/usr/local/Cellar/node/0.10.11/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:275:14)
+83 error     at Request.self.callback (/usr/local/Cellar/node/0.10.11/lib/node_modules/npm/node_modules/request/request.js:123:22)
+83 error     at Request.EventEmitter.emit (events.js:98:17)
+83 error     at Request.<anonymous> (/usr/local/Cellar/node/0.10.11/lib/node_modules/npm/node_modules/request/request.js:893:14)
+83 error     at Request.EventEmitter.emit (events.js:117:20)
+83 error     at IncomingMessage.<anonymous> (/usr/local/Cellar/node/0.10.11/lib/node_modules/npm/node_modules/request/request.js:844:12)
+83 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+83 error     at _stream_readable.js:910:16
+83 error     at process._tickCallback (node.js:415:13)
+84 error If you need help, you may report this *entire* log,
+84 error including the npm and node versions, at:
+84 error     <http://github.com/isaacs/npm/issues>
+85 error System Darwin 14.0.0
+86 error command "node" "/usr/local/bin/npm" "publish"
+87 error cwd /Users/Ronnie/Development/Sites/gulp-importjs
+88 error node -v v0.10.11
+89 error npm -v 1.3.21
+90 verbose exit [ 1, true ]
