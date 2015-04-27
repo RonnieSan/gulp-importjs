@@ -3,6 +3,7 @@ var through = require('through2'),
 	fs      = require('fs'),
 	path    = require('path'),
 	imports = [],
+	PluginError = gutil.PluginError,
 	appRoot = path.dirname(module.parent.filename);
 
 const PLUGIN_NAME = 'gulp-importjs';
@@ -14,27 +15,33 @@ function importStream(content) {
 }
 
 function importJS(appDir) {
-
 	// Allow passing of a new app root
 	if(typeof appDir === 'string'){
 		appRoot = appDir;
 	}
 
 	var stream = through.obj(function(file, enc, callback) {
-
-		// Reset the imports object
+		// Reset the imports object	
 		imports = [];
 
 		if (file.isNull()) {
 			// Do nothing
 		}
-		
+		var compiled = null;
 		if (file.isBuffer()) {
-			file.contents = new Buffer(replaceImports(file.contents.toString()));
+			compiled = replaceImports(file.contents.toString());
+			if (compiled.err) {
+				return callback(compiled.err);
+			}
+			file.contents = new Buffer(compiled.result);
 		}
 
 		if (file.isStream()) {
-			file.contents = file.contents.pipe(importStream(new Buffer(replaceImports(file.contents.toString()))));
+			compiled = replaceImports(file.contents.toString());
+			if (compiled.err) {
+				return callback(compiled.err);
+			}
+			file.contents = file.contents.pipe(importStream(new Buffer(compiled.result)));
 		}
 
 		this.push(file);
@@ -44,18 +51,22 @@ function importJS(appDir) {
 	return stream;
 }
 
-var re = /^@import [\'\"](.+)[\'\"];$/mi;
+//group - escaped tic, escaped quote, then anything, then escaped tic or escaped quote, then semicolon, then (optional) whitespace
+var re = /^@import [\'\"](.+)[\'\"];[\s]*$/mi;
 
+/**
+ * @return {Object}         2 properties : err (optional) and result
+ */
 function replaceImports(content) {
-
+	var err = null;
 	while ((match = re.exec(content)) !== null) {
-
-		var fileName = appRoot + match[1];
+		match = match.map(function (argument) {
+			return argument.trim();
+		});
+		var fileName = appRoot + match[1].trim();
 		var match    = match[0].toString();
-
 		// Check if the file we're trying to import exists
 		if (fs.existsSync(fileName)) {
-
 			// Check if the file was already imported somewhere
 			if (imports.indexOf(fileName) === -1) {
 
@@ -67,7 +78,12 @@ function replaceImports(content) {
 				importContents = fs.readFileSync(fileName, 'utf8').replace(/\$/g, '$$$$');
 
 				// Recursively import files
-				importContents = replaceImports(importContents);
+				var recursiveResults = replaceImports(importContents);
+				if (recursiveResults.err) {
+					err = recursiveResults.err;
+					break;
+				}
+				importContents = recursiveResults.result; //replaceImports(importContents);
 
 				// Place the imported content into the file
 				content = content.replace(re, importContents + "\n", "mi");
@@ -83,11 +99,15 @@ function replaceImports(content) {
 		// The file does not exist, print out the error
 		else {
 			content = content.replace(re, "// Import file does not exist: " + fileName + "\n");
+			err = new PluginError('gulp-importjs', ' Import file does not exist: ' + fileName + '\n');
+			break;
 		}
 
 	}
-
-	return content;
+	return {
+		result 	: content,
+		err 	: err
+	};
 }
 
 module.exports = importJS;
